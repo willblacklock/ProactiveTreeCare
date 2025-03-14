@@ -7,7 +7,6 @@ export default function Hero() {
     <Box
       sx={{
         bgcolor: (theme) => theme.palette.primary.main,
-        height: "40vh",
         color: (theme) => theme.palette.primary.contrastText,
       }}
     >
@@ -21,11 +20,14 @@ export default function Hero() {
         }}
       >
         <img
-          src={"/images/primary-rectangle.png"}
-          width={"50%"}
-          style={{ marginTop: 15 }}
-        ></img>
-        <Socials />
+          src={"/images/logo&title-dark.png"}
+          width={"70%"}
+          style={{ marginTop: 35 }}
+        />
+
+        <Box sx={{ mt: 2, mb: 4 }}>
+          <Socials contact={true} />
+        </Box>
       </Container>
     </Box>
   );

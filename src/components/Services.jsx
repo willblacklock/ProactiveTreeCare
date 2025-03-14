@@ -28,7 +28,10 @@ export default function Services({ id }) {
   return (
     <Box
       id={id}
-      sx={{ bgcolor: (theme) => theme.palette.background.main, py: 10 }}
+      sx={{
+        bgcolor: (theme) => theme.palette.background.main,
+        py: { xs: 5, sm: 10 },
+      }}
     >
       <Container maxWidth="md">
         <Typography variant="h3" gutterBottom>

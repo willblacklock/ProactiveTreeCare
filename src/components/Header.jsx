@@ -16,8 +16,8 @@ const sections = [
   { name: "About", id: "about" },
   { name: "Services", id: "services" },
   { name: "Compliance", id: "compliance" },
-  { name: "Gallery", id: "gallery" },
   { name: "Contact", id: "contact" },
+  { name: "Gallery", id: "gallery" },
 ];
 
 export default function Header() {
@@ -32,11 +32,8 @@ export default function Header() {
   };
 
   const handleScrollToSection = (id) => {
-    console.log("id = ", id);
     const section = document.getElementById(id);
-    console.log("section = ", section);
     if (section) {
-      console.log("scrolling to section = ", section);
       section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
     handleCloseNavMenu(); // Close the mobile menu

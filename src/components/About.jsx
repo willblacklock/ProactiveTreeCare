@@ -5,16 +5,21 @@ export default function About({ id }) {
   return (
     <Box
       id={id}
-      sx={{ bgcolor: (theme) => theme.palette.common.white, py: 10 }}
+      sx={{
+        bgcolor: (theme) => theme.palette.common.white,
+        py: { xs: 5, sm: 10 },
+      }}
     >
       <Container maxWidth="md">
-        <Grid2 container spacing={8}>
+        <Grid2 container spacing={{ xs: 4, sm: 8 }}>
           <Grid2 size={{ xs: 12, sm: 6 }}>
             <Box
               sx={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                width: { xs: "70%", sm: "100%" },
+                justifySelf: "center",
               }}
             >
               <img
